@@ -2,7 +2,9 @@
 介于A股的特殊性，上市公司股东户数是一个超前指标。  
 本项目的目的就是爬取A股上市公司股东人数。   
 详细注释见三个.py文件。  
+
 Package Used: Python + Pandas + Tushare: https://www.gelonghui.com/p/144170  
+其中pandas本身就有drop、replace等功能，可以在转换为list之前就对数据进行一些清洗
 
 <br>
 
