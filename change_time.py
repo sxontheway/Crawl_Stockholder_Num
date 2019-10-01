@@ -24,6 +24,10 @@ with open("merged.txt","r+") as f:
     for line in f.readlines():
         new_data.append( line.replace(line[9:17], last_open_day(line[9:17])) )
 
+# 删除相同元素
+new_data = sorted(new_data, key = lambda x: (x[1], x[2]))
+new_data = reduce(lambda x,y:x if y in x else x + [y], [[], ] + new_data)
+
 with open("merged1.txt","w") as f:
     for i in new_data:
         f.write(i)
