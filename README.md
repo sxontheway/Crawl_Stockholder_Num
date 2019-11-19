@@ -70,7 +70,7 @@ Package Used: Python + Pandas + Tushare: https://www.gelonghui.com/p/144170
     data_list = np.array(data.values.tolist()) 
     ```
 
-* 实现其他的功能，例如翻页等，需要用BeautifulSoup去解析页面的html
+* 实现其他的功能（非表格提取），例如翻页等，需要用BeautifulSoup去解析页面的html
     ```
     html = urllib.request.urlopen(url = url) 
     soup = BeautifulSoup(html, features = "lxml")  
